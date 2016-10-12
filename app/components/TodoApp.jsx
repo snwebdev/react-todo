@@ -41,7 +41,7 @@ var TodoApp = React.createClass({
     var {todos} = this.state;
     return(
     <div>
-      <TodoSearch oSearch = {this.handleSearch}/>
+      <TodoSearch onSearch = {this.handleSearch}/>
       <TodoList todos={todos}/>
       <AddTodo onAddTodo={this.handleAddTodo}/>
     </div>
